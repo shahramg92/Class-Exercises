@@ -1,1 +1,2 @@
-print('the way life goes')
+name = input('What is your name? ')
+print("Hello, {}".format(name))
