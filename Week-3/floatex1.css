@@ -5,12 +5,13 @@ div#header {
   background-color: aqua;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 div#left {
-  width:20%;
-  height:600px;
-  padding: 1px;
+  width: 280px;
+  height: 600px;
+  padding: 10px;
   float: left;
   background-color: #008B8B;
   text-align: center;
@@ -20,11 +21,12 @@ div#left {
 
 div#right{
   height: 500px;
-  width: 78%;
-  padding: 1px;
+  width: calc(100% - 360px);
+  padding: 10px;
   float:right;
   background-color: #48D1CC;
   text-align: center;
+  margin-right: 10px;
 }
 
 div#footer{
@@ -34,4 +36,5 @@ div#footer{
   height: 50px;
   text-align: center;
   margin-top: 500px;
+  margin-right: 10px;
 }
