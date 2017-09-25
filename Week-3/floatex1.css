@@ -1,0 +1,23 @@
+div#header {
+  clear: both;
+  height: 50px;
+  background-color: aqua;
+  padding: 1px;
+}
+
+div#left {
+  float:left;
+  width: 150px;
+  background-color: #008B8B;
+}
+
+div#right{
+  float: right;
+  width: 150px;
+  background-color: #48D1CC;
+}
+
+div#footer{
+  clear: both;
+  background-color: #FF4500;
+}
