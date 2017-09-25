@@ -10,7 +10,6 @@ div#header {
 
 div#left {
   width: 280px;
-  height: 600px;
   padding: 10px;
   float: left;
   background-color: #008B8B;
@@ -20,7 +19,6 @@ div#left {
 }
 
 div#right{
-  height: 500px;
   width: calc(100% - 360px);
   padding: 10px;
   float:right;
