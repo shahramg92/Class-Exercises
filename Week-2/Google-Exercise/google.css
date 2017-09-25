@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #FAFFFE;
+  background-color: white;
 }
 
 .textfield {
@@ -10,7 +10,7 @@ body {
   background-image: url(mic.png);
   background-repeat: no-repeat;
   background-position: right;
-  border: 5px solid green;
+  border: 5px solid #F0F8FF;
 }
 
 img {
@@ -21,6 +21,11 @@ button {
   font-size: 0.8em;
   font-weight: bold;
   padding: 10px;
-  background-color: #EFFAF3;
-  border: 1px solid #EFFAF3;
+  background-color: #F0F8FF;
+  border: 1px solid #F0F8FF;
+}
+
+gmail {
+
+  
 }
