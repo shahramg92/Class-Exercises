@@ -1,5 +1,26 @@
-h1.center {
+.h1center {
   text-align: center;
-  
+  margin-top: 100px;
+}
 
+.h2center {
+  text-align: center;
+  margin: 150px 0px;
+  font-size: 50px;
+}
+
+.footer {
+  text-align: center;
+  color: #00b3b3;
+}
+
+.body {
+  background-color: #66ccff
+}
+
+
+.img {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
