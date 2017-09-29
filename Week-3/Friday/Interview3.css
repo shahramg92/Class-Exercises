@@ -1,0 +1,61 @@
+.square {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 100px solid red;
+  border-right: 100px solid red;
+  border-top: 100px solid red;
+}
+
+.rectangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 150px solid red;
+  border-right: 150px solid red;
+  border-top: 100px solid red;
+}
+
+.oval {
+  width: 240px;
+  height: 120px;
+  background: green;
+  border-radius: 135px / 75px;
+}
+
+.circle {
+width: 120px;
+height: 120px;
+background: green;
+border-radius: 135px / 135px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid red;
+}
+
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid red;
+  border-top: 100px solid transparent;
+}
+
+.trapezoid {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 200px solid red;
+  border-right: 100px solid red;
+  border-top: 100px solid red;
+
+
+}
