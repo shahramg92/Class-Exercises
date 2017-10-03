@@ -1,3 +1,5 @@
+
+
 print("\n***\nINSTRUCTIONS: This program accepts your bill amount and level of satisfaction with your service, and returns an appropriate tip amount.\n***\n")
 
 def main():
