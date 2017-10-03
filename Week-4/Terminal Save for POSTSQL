@@ -1,0 +1,25 @@
+Last login: Tue Oct  3 09:15:53 on ttys000
+Shahrams-MBP:~ shahram$ psql
+psql (9.6.5)
+Type "help" for help.
+
+shahram=# which psql
+shahram-# /q
+shahram-# which psql
+shahram-# \q
+Shahrams-MBP:~ shahram$ which psql
+/Applications/Postgres.app/Contents/Versions/9.6/bin/psql
+Shahrams-MBP:~ shahram$ psql
+psql (9.6.5)
+Type "help" for help.
+
+shahram=# \q
+Shahrams-MBP:~ shahram$ createdb test
+Shahrams-MBP:~ shahram$ dropdb test
+Shahrams-MBP:~ shahram$ createdb test
+Shahrams-MBP:~ shahram$ psql test
+psql (9.6.5)
+Type "help" for help.
+
+test=# \q
+Shahrams-MBP:~ shahram$ 
