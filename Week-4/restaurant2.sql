@@ -55,7 +55,12 @@ GROUP BY restaurant.name;
 
 
 
-SELECT review.review,
+
+SELECT restaurant.name, review.review FROM restaurant
+INNER JOIN review
+ON restaurant.id = review.restaurant_id
+ORDER BY review.review;
+
 
 
 
