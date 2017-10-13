@@ -22,9 +22,10 @@ function tipAmount(total, quality) {
   else {
     return ('Error in quality provided')
   };
-  bill = total + (total * tip);
 
-  return bill;
+  tip_Amount = tip * total
+
+  return tip_Amount;
 };
 
-console.log(tipAmount(300, 'bad'));
+console.log(tipAmount(100, 'bad'));
