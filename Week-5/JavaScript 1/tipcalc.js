@@ -23,7 +23,7 @@ function tipAmount(total, quality) {
     return ('Error in quality provided')
   };
 
-  tip_Amount = tip * total
+  tip_Amount = total * tip
 
   return tip_Amount;
 };
