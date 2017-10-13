@@ -7,13 +7,24 @@
 
 
 
-function tipAmount (bill, good, fair, bad) {
-  var bill = prompt(' What is the total bill? ')
-  var tip =
-  var good = 0.2;
-  var fair = 0.15;
-  var bad = 0.10;
 
+function tipAmount(total, quality) {
+  let tip = 0;
+  if (quality == 'good') {
+    tip = .2;
+  }
+  else if (quality == 'fair') {
+    tip = .15;
+  }
+  else if (quality == 'bad') {
+    tip = .1
+  }
+  else {
+    return ('Error in quality provided')
+  };
+  bill = total + (total * tip);
 
+  return bill;
+};
 
-}
+console.log(tipAmount(300, 'bad'));
