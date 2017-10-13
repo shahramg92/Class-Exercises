@@ -15,5 +15,7 @@ function totalAmount(total, quality); {
     console.log("There was an error in your input!");
   }
 
+  total_amount = total + (total * tip)
+  return total_amount
 
 }
