@@ -5,7 +5,6 @@
 // bad -> 10%
 //
 
-
 function tipAmount (bill, good, fair, bad) {
   var bill = prompt(' What is the total bill? ')
   var tip =
