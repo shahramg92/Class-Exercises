@@ -14,6 +14,6 @@ var people = [
 ];
 
 console.log(people.sort(function sortPeople(a, b) {
-  console.log(a, b);
+  // console.log(a, b); for showing how it works
   return a.length - b.length
 }));
