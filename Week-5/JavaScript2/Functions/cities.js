@@ -15,9 +15,9 @@ var cities = [
   { name: 'New York', temperature: 80.0 }
 ];
 
-function temp(cities) {
-  if (cities.temperature < 70) {
-    return cities.name;
+function temp(city) {
+  if (city.temperature < 70) {
+    return city.name;
   }
 }
 
