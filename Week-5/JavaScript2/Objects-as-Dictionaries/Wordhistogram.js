@@ -1,0 +1,7 @@
+function wordHistogram(string)  {
+
+
+
+
+  
+}
