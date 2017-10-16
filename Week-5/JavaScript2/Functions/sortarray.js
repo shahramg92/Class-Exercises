@@ -11,3 +11,5 @@ var people = [
   'John',
   'Eli',
 ];
+
+console.log(people.sort());
