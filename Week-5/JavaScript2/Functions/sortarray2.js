@@ -2,8 +2,8 @@
 //
 
 var people = [
-  'Dom',
   'Lyn',
+  'Dom',
   'Kirk',
   'Autumn',
   'Trista',
@@ -13,4 +13,7 @@ var people = [
   'Eli',
 ];
 
-console.log(people.sort());
+console.log(people.sort(function sortPeople(a, b) {
+  console.log(a, b);
+  return a.length - b.length
+}));
