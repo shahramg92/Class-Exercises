@@ -5,7 +5,7 @@
 
 function letterHistogram(string) {
   let histogram = {};
-    for (i = 0; i < string.length; i++) {
+    for (var i = 0; i < string.length; i++) {
       let char = string[i]
       if (char in histogram) {
         histogram[char] += 1;
