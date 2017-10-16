@@ -17,8 +17,13 @@ var cities = [
 
 function temp(city) {
   if (city.temperature < 70) {
-    return city.name;
+    return true;
   }
+  else
+    return false;
 }
 
-console.log(cities.filter(temp));
+var filtered = cities.filter(temp);
+console.log(filtered.map(function (city) {
+  return city.name + ': ' + city.temperature;
+}));
