@@ -19,3 +19,8 @@ delete phonebookDict.Alice;
 phonebookDict.Bob = '968-345-2345';
 
 var personName = 'Elizabeth';
+
+for (var name in phonebookDict) {
+  var number = phonebookDict[name];
+  console.log(`${name}: ${number}`);
+}
