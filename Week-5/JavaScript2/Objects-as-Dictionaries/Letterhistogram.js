@@ -17,4 +17,4 @@ function letterHistogram(string) {
     return histogram;
   }
 
-console.log(letterHistogram('bananas'));
+console.log(letterHistogram('I love my baby'));
