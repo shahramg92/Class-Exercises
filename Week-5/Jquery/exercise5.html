@@ -13,22 +13,28 @@
     page in the iframe below. Set the iframe's `src` attribute to a URL will cause it to render the page.
     */
 
-
   $(document).ready(function () {
-    $(function() {
-
-
-    
-    });
+    $("#hellohappy").click(function (event) {
+      event.preventDefault()
+      $("#iframe").attr("src", "http://hellohappy.org");
+    })
+    $("#duckduckgo").click(function (event) {
+      event.preventDefault()
+      $("#iframe").attr("src", "http://duckduckgo.com");
+    })
+    $("#csstricks").click(function (event) {
+      event.preventDefault()
+      $("#iframe").attr("src", "http://css-tricks.com");
+    })
   });
 
     </script>
   </head>
   <body>
     <ul>
-      <li><a href="http://hellohappy.org">Hello Happy</a></li>
-      <li><a href="http://duckduckgo.com">DuckDuckGo</a></li>
-      <li><a href="http://css-tricks.com">CSS Tricks</a></li>
+      <li ><a id = "hellohappy" href="http://hellohappy.org">Hello Happy</a></li>
+      <li ><a id= "duckduckgo" href="http://duckduckgo.com">DuckDuckGo</a></li>
+      <li ><a id= "csstricks" href="http://css-tricks.com">CSS Tricks</a></li>
     </ul>
     <iframe id="iframe" src="http://hellohappy.org" width="800" height="480"></iframe>
   </body>
