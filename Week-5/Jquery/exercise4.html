@@ -3,15 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="jquery.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <script>
     /*
     When the clear button is clicked, clear the text field.
     When the save button is clicked, take the text value inside the text field, and append a new <li> element to the #log with the entered text value.
     */
-    $(function () {
-      // write your code here
-    });
+
+    $(document).ready(function() {
+      $("#clear-button" ).click(function () {
+        $("#text-field").val('');
+      })
+      $("#save-button").click(function () {
+        var temp = $('#text-field').val();
+        $('#log').append('<li>' + temp + '</li>')
+
+      })
+    })
+
+
     </script>
   </head>
   <body>

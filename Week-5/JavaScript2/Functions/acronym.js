@@ -4,8 +4,9 @@ var vip = ['very', 'important', 'person'];
 var nasa = ['national', 'aeronautics', 'space', 'administration'];
 
 function acronym(words) {
-  return words.reduce(function(w1, w2) {
-    return w1 + w2[0];
+  return words.reduce(function(total, w2) {
+    console.log(total)
+    return total + w2[0];
   }, []);
 }
 
