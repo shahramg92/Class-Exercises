@@ -10,17 +10,15 @@ class Card {
     this.point = point;
     this.suit = suit;
   }
-
-myCard.prototype.getimage = function (getImageUrl) {
-
-
-
-  }
 }
 
+Card.prototype.getImageUrl = function () {
+  return 'images/5_of_diamonds.png';
+  }
 
 
 
 myCard = new Card(5, 'diamonds');
 console.log(myCard.point);
 console.log(myCard.suit);
+console.log(myCard.getImageUrl());
