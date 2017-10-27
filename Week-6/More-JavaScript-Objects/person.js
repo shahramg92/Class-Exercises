@@ -41,5 +41,12 @@ class Person {
   greet(other) {
     console.log(this.createGreeting(other));
   }
-
 }
+
+var p1 = new Person('Shahram');
+var p2 = new Person('Sofia');
+
+console.log(p1.createGreeting(p2));
+console.log(p1.addFriend(p2));
+console.log(p1.friends)
+console.log(p1.createGreeting(p1.friends[0]));
