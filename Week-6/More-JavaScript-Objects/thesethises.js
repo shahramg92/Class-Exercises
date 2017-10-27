@@ -18,16 +18,9 @@ class Person {
     console.log(this.createGreeting(other));
   }
 
-  lazyGreet() {
-    console.log(this);
-
-    setTimeout(() => {
-      console.log(this);
-    }, 1000)
+  lazyGreet(other) {
+    setTimeout(() => {this.greet(other)}, 2000);
   }
-  // setTimeout(lazyGreet(lazy)){
-  //   console.log('Yo ' + lazy.name + '! from ' + this.name + '.');
-  // }
 }
 
 var p1 = new Person('Shahram');
