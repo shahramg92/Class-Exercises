@@ -17,3 +17,6 @@ Class addCard {
 }
 
 var myHand = new Hand();
+myHand.addCard(new Card(5, 'diamonds'));
+myHand.addCard(new Card(13, 'spades'));
+console.log(myHand.getPoints());
