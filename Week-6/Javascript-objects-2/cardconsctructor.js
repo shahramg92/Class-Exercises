@@ -19,6 +19,6 @@ class Card {
   }
 }
 
-myCard = new Card(5, 'diamonds');
+var myCard = new Card(5, 'diamonds');
 console.log(myCard.point);
 console.log(myCard.suit);
