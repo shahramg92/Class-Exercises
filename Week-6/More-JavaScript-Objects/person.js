@@ -25,10 +25,24 @@ p1.createGreeting(p2);
 Rewrite the above type as a class
 
 class Person {
-  constructor(name, friends) {
+  constructor(name) {
     this.name = name;
-    this.friends = friends;
+    this.friends = [];
   }
+
+  addFriend(other) {
+    this.friends.push(friend);
+  }
+
+  createGreeting(other) {
+    return 'Yo ' + other.name + '! from ' + this.name + '.';
+  }
+
+  greet(other) {
+    
+  }
+
+
 }
 
 
