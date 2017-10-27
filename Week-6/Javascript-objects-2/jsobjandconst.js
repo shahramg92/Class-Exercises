@@ -16,3 +16,21 @@ function Person(name, email, phone) {
 Person.prototype.greet = function(other) {
   console.log('Hello ' + other.name + ', I am ' + this.name + '!');
 };
+
+// 1.
+var sonny = new Person('Sonny', 'sonny@hotmail.com', '483-485-4948');
+
+// 2.
+var jordan = new Person('Jordan', 'jordan@aol.com', '495-586-3456');
+
+// 3.
+sonny.greet(jordan);
+
+// 4.
+jordan.greet(sonny);
+
+// 5.
+console.log('Name:', sonny.name, '\nEmail:', sonny.email);
+
+// 6.
+console.log(jordan);
