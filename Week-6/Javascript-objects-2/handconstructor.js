@@ -10,8 +10,9 @@
 // Implement a Hand constructor that will allow the code above to work. Hint: you will want to store as a property of a hand object - an array of card objects.
 
 Class addCard {
-  constructor (point, suit, ) {
-
+  constructor (point, suit) {
+    this.point = point;
+    this.suit = suit;
   }
 }
 
