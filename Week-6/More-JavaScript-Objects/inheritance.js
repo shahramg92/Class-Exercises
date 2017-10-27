@@ -18,3 +18,11 @@ var daughter = {
   firstName: 'Ilene',
   hairColor: 'brown'
 };
+
+daughter.__proto__ = mom;
+
+mom.showInfo = function() {
+  console.log(`Name: ${this.firstName} ${this.lastName}\nEye Color: ${this.eyeColor}\nHair Color: ${this.hairColor}\n`);
+};
+mom.showInfo();
+daughter.showInfo();
