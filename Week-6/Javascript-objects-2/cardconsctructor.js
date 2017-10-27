@@ -11,3 +11,15 @@
 // 5
 // > myCard.suit
 // 'diamonds'
+
+class Card {
+  constructor (point, suit) {
+    this.point = point;
+    this.suit = suit;
+  }
+
+
+
+
+  
+}
