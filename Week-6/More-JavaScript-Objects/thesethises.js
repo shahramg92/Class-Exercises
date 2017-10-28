@@ -6,7 +6,6 @@ class Person {
     this.friends = [];
   }
 
-
   addFriend(friend) {
     this.friends.push(friend);
   }
