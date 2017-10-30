@@ -17,7 +17,6 @@ let product = function(numbers, callback) {
   var ans = numbers.reduce(function(a, b) {
     return a * b;
   }, 1);
-
   callback(ans);
 }
 
@@ -31,10 +30,10 @@ let calc = function(num1, num2, f, callback){
   if (callback) {
     callback(ans);
   }
-}, 2000);
+}, 3000);
 }
 
-console.log(calc(2,3,add, function (ans) {
+console.log(calc(2,3,subtract, function (ans) {
   console.log(ans);
 }));
 console.log(anything('James', greeting));
