@@ -30,6 +30,10 @@ class Person {
   lazyGreet(other) {
     setTimeout(() => {this.greet(other)}, 2000);
   }
+
+  createGreetingsForFriends(other) {
+    
+  }
 }
 
 var p1 = new Person('Shahram');
