@@ -32,11 +32,11 @@ class Person {
   }
 
   createGreetingsForFriends(other) {
-    
+
   }
 }
 
 var p1 = new Person('Shahram');
 var p2 = new Person('Sofia');
-
-p1.lazyGreet(p2);
+p1.addFriend(p2);
+p2.addFriend(p1);
