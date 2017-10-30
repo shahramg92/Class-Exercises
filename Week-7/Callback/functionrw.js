@@ -19,16 +19,26 @@
 //   }, 1);
 // }
 
-function add (x, y, callback) {
-  var result = x + y;
-  callback(result);
+let add = function(a,b){
+  return a + b;
 }
-function multiply (x, y, callback) {
-  var result = x * y;
-  callback(result);
+
+let subtract = function(a,b){
+  return a - b;
 }
-add(1, 2, function (result) {
-  multiply(result, 3, function (final_result) {
-    console.log(final_result);
-  });
-});
+
+let greeting = function(person){
+  return 'Hola, ' + person + '!';
+}
+
+let product = function(numbers) {
+  return numbers.reduce(function(a, b) {
+    return a * b;
+  }, 1);
+}
+
+let calc = function(num1, num2, callback){
+  return callback(num1, num2);
+}
+
+console.log(calc(2,3,add));
