@@ -8,3 +8,4 @@
 // > alfie.createGreetingsForFriends();
 // ["Yo Anushka! from Alfie.", "Yo Henrique! from Alfie."]
 // Do this without using a loop but by using map instead.
+mkj
