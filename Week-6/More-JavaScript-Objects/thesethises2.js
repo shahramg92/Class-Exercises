@@ -8,3 +8,31 @@
 // > alfie.createGreetingsForFriends();
 // ["Yo Anushka! from Alfie.", "Yo Henrique! from Alfie."]
 // Do this without using a loop but by using map instead.
+
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.friends = [];
+  }
+
+  addFriend(friend) {
+    this.friends.push(friend);
+  }
+
+  createGreeting(other) {
+    return 'Yo ' + other.name + '! from ' + this.name + '.';
+  }
+
+  greet(other) {
+    console.log(this.createGreeting(other));
+  }
+
+  lazyGreet(other) {
+    setTimeout(() => {this.greet(other)}, 2000);
+  }
+}
+
+var p1 = new Person('Shahram');
+var p2 = new Person('Sofia');
+
+p1.lazyGreet(p2);
