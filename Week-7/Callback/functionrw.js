@@ -27,14 +27,18 @@ let subtract = function(a,b){
   return a - b;
 }
 
-let greeting = function(person){
+let greeting = function(person, callback){
   return 'Hola, ' + person + '!';
 }
 
-let product = function(numbers) {
+let product = function(numbers, callback) {
   return numbers.reduce(function(a, b) {
     return a * b;
   }, 1);
+}
+
+let anything = function(x, callback) {
+  return callback(x);
 }
 
 let calc = function(num1, num2, callback){
@@ -42,3 +46,4 @@ let calc = function(num1, num2, callback){
 }
 
 console.log(calc(2,3,add));
+console.log(anything(3));
