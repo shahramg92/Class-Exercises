@@ -32,9 +32,11 @@ let greeting = function(person, callback){
 }
 
 let product = function(numbers, callback) {
-  return numbers.reduce(function(a, b) {
+  var ans = numbers.reduce(function(a, b) {
     return a * b;
   }, 1);
+
+  callback(ans);
 }
 
 let anything = function(x, callback) {
@@ -46,4 +48,7 @@ let calc = function(num1, num2, callback){
 }
 
 console.log(calc(2,3,add));
-console.log(anything(3));
+console.log(anything('James', greeting));
+product([2, 3, 4], function (ans) {
+  console.log(ans);
+})
