@@ -18,3 +18,17 @@
 //     return a * b;
 //   }, 1);
 // }
+
+function add (x, y, callback) {
+  var result = x + y;
+  callback(result);
+}
+function multiply (x, y, callback) {
+  var result = x * y;
+  callback(result);
+}
+add(1, 2, function (result) {
+  multiply(result, 3, function (final_result) {
+    console.log(final_result);
+  });
+});
