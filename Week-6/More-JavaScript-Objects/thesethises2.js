@@ -32,11 +32,16 @@ class Person {
   }
 
   createGreetingsForFriends(other) {
-
+    console.log(this.friends);
+    return this.friends.map((friend) => {
+      return this.createGreeting(friend);
+    });
   }
 }
 
 var p1 = new Person('Shahram');
 var p2 = new Person('Sofia');
+var p3 = new Person('James');
 p1.addFriend(p2);
-p2.addFriend(p1);
+p1.addFriend(p3);
+console.log(p1.createGreetingsForFriends());
