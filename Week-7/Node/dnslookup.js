@@ -6,3 +6,13 @@
 // Trigger an error condition by providing an invalid domain. See that the error gets displayed.
 //
 // Hint: Use require('dns') and dns.lookup.
+
+var fs = require('fs');
+var readline = require('readline');
+
+var r1 = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+r1.question("")
