@@ -6,4 +6,7 @@ console.log(_.shuffle(nums));
 console.log(_.sum(nums));
 console.log(_.max(nums));
 console.log(_.mean(nums));
-console.log(_.uniq(nums));
+console.log(_.concat(nums));
+console.log(_.chunk(nums));
+console.log(_.flatten(nums));
+console.log(_.last(nums));
