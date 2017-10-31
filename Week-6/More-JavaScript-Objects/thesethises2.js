@@ -39,6 +39,7 @@ class Person {
   }
 }
 
+
 var p1 = new Person('Shahram');
 var p2 = new Person('Sofia');
 var p3 = new Person('James');
