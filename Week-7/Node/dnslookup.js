@@ -7,12 +7,22 @@
 //
 // Hint: Use require('dns') and dns.lookup.
 
-var fs = require('fs');
+var dns = require('dns');
 var readline = require('readline');
 
-var r1 = readline.createInterface({
+// create interface
+var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-r1.question("")
+rl.question('Please enter url, with no http:// > ', function (link){
+  dns.lookup(link, function(error, ip){
+    if (error){
+      console.error(error.message);
+      return;
+    }
+    console.log('The ip for ' + link + " is " + ip);
+  })
+  rl.close();
+});
