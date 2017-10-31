@@ -11,8 +11,6 @@
 
 var rp = require('request-promise');
 
-
-
 var urls = [
   'https://en.wikipedia.org/wiki/Futures_and_promises',
   'https://en.wikipedia.org/wiki/Continuation-passing_style',
@@ -20,3 +18,14 @@ var urls = [
   'https://en.wikipedia.org/wiki/Node.js',
   'https://en.wikipedia.org/wiki/Google_Chrome'
 ];
+
+var plist = [];
+urls.forEach(function (url) {
+  var p = rp(url);
+  plist.push(p);
+});
+
+Promise.all(plist)
+  .then(function (responses) {
+    console.log(responses);
+  });
