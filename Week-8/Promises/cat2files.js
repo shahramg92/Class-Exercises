@@ -11,4 +11,7 @@ var r1 = readline.createInterface({
   output: process.stdin
 });
 
-r1.question("Enter a filename you want to use as input")
+r1.question("Enter a filename you want to use as input", function(filename)){
+  return console.log(fs.readFile(filename));
+
+}
