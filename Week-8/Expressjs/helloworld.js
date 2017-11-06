@@ -1,7 +1,8 @@
 // Make an express program that will display "Hello, world!" at the root URL: /
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+
 app.get('/', function (request, response) {
   response.send('Hello World!');
 });

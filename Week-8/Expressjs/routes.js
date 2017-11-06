@@ -6,8 +6,9 @@
 // "Woof" at the URL /dogs
 // "Living together" at the URL /cats_and_dogsvar express = require('express');
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+
 app.get('/', function (request, response) {
   response.send('Hello World!');
 });

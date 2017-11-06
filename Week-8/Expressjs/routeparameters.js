@@ -5,8 +5,9 @@
 // /greet/Manny it should say "Hello, Manny!"
 // etc...
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+
 app.get('/', function (request, response) {
   response.send('Hello World!');
 });
@@ -19,6 +20,11 @@ app.get('/dogs', function (request, response) {
 app.get('/cats_and_dogs', function (request, response) {
   response.send('Living together')
 })
+app.get('/hello/:name', function(req, res) {
+  var name = req.params.name || 'world';
+  res.send('Hello ' + name + '!');
+});
+
 
 app.listen(8000, function () {
   console.log('Listening on port 8000');
