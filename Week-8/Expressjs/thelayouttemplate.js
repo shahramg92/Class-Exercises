@@ -1,0 +1,1 @@
+// Create a layout.hbs file in the views folder. This will become the layout for all the pages. You will put <html> and <body> elements in here, while including a {{{body}}} placeholder which will bring in the content of each page.
