@@ -1,10 +1,9 @@
-// Routes
+// Adding to the same program, say a greeting to the user, given that the user's name is encoded inside the URL. For example, if you go to the URL
 //
-// Add to your program the following pages:
-//
-// "Meow" at the URL /cats
-// "Woof" at the URL /dogs
-// "Living together" at the URL /cats_and_dogsvar express = require('express');
+// /greet/Kennedy it should say "Hello, Kennedy!"
+// /greet/Jamison it should say "Hello, Jamison!"
+// /greet/Manny it should say "Hello, Manny!"
+// etc...
 
 var express = require('express');
 var app = express();
