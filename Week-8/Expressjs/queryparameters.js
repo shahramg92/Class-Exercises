@@ -19,11 +19,15 @@ app.get('/dogs', function (request, response) {
 app.get('/cats_and_dogs', function (request, response) {
   response.send('Living together')
 })
-app.get('/hello/:name', function(request, response) {
+app.get('/greet/:name', function(request, response) {
   var name = request.params.name || 'world';
   response.send('Hello ' + name + '!');
 });
-app.get('/year?')
+app.get('/age/:year', function(request, response) {
+  let year = request.params.year;
+  let age = (2017 - year);
+  response.send('You are rougly ' + age + ' years old!')
+})
 
 
 app.listen(8000, function () {
