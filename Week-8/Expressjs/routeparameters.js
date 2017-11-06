@@ -20,9 +20,9 @@ app.get('/dogs', function (request, response) {
 app.get('/cats_and_dogs', function (request, response) {
   response.send('Living together')
 })
-app.get('/hello/:name', function(req, res) {
-  var name = req.params.name || 'world';
-  res.send('Hello ' + name + '!');
+app.get('/hello/:name', function(request, response) {
+  var name = request.params.name || 'world';
+  response.send('Hello ' + name + '!');
 });
 
 
