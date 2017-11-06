@@ -43,6 +43,20 @@ app.get('/greet/:name', function(request, response) {
 });
 // http://localhost:8000/greet/Shahram?year=23 example of url input
 
+
+app.get('/fav_animals', function(request, response) {
+  var animals = [
+    { name: 'cats', favorite: true },
+    { name: 'dogs', favorite: true },
+    { name: 'tree frogs', favorite: true },
+    { name: 'earth worms', favorite: false },
+    { name: 'guinea pigs', favorite: true },
+  ];
+context = {animals:animals}
+response.render('fav_animals.hbs', context)
+});
+
+
 app.get('/age/:year', function(request, response) {
   let year = request.params.year;
   let age = (2017 - year);
