@@ -23,6 +23,7 @@ app.get('/hello/:name', function(request, response) {
   var name = request.params.name || 'world';
   response.send('Hello ' + name + '!');
 });
+app.get('/year?')
 
 
 app.listen(8000, function () {
