@@ -5,3 +5,5 @@ class App extends Component {
     <div>Countdown Champ, App Component</div>
   }
 }
+
+export default App;
